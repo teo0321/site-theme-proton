@@ -507,7 +507,7 @@ optgroup {
   color: #4281da;
 }
 
-/* One pill, many moods */
+/* One status chip, many moods */
 .missing-torrent-status--trumpable,
 .torrent-info__trumpable,
 .torrent-info__reported,
@@ -523,7 +523,7 @@ optgroup {
   vertical-align: baseline;
   padding: 0.2rem 0.6rem;
   border: none !important;
-  border-radius: 1rem;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 
@@ -2166,7 +2166,7 @@ th {
   color: #4281da;
   background: rgba(66, 129, 218, 0.15);
   padding: 0.2rem 0.6rem;
-  border-radius: 1rem;
+  border-radius: 4px;
   margin-bottom: 0.1rem;
   transition: all 0.3s;
 }
