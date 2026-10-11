@@ -4724,13 +4724,13 @@ textarea:hover:not(:focus) {
   border-color: #4e5674;
 }
 
-/* Pagination links become little pills */
+/* Pagination links get a soft hover chip */
 .pagination__link,
 .pagination__current-page {
   display: inline-block;
   min-width: 1.8em;
   padding: 0.2em 0.5em;
-  border-radius: 1rem;
+  border-radius: 4px;
   text-align: center;
 }
 
@@ -4838,42 +4838,6 @@ button {
   opacity: 1;
   color: #fff;
   background: rgba(66, 129, 218, 0.22);
-}
-
-/* A little more room on big screens */
-@media (min-width: 1200px) {
-  body,
-  #torrents-movie-view {
-    max-width: 1200px;
-  }
-}
-
-@media (min-width: 1440px) {
-  body,
-  #torrents-movie-view {
-    max-width: 1360px;
-  }
-}
-
-@media (min-width: 1680px) {
-  body,
-  #torrents-movie-view {
-    max-width: 1560px;
-  }
-}
-
-@media (min-width: 2048px) {
-  body,
-  #torrents-movie-view {
-    max-width: 1720px;
-  }
-}
-
-@media (min-width: 3840px) {
-  body,
-  #torrents-movie-view {
-    max-width: 2000px;
-  }
 }
 
 /****************************************************************************
