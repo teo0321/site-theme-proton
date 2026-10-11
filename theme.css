@@ -4696,26 +4696,6 @@ body {
   );
 }
 
-/* ...and so does a thin line under the top bar */
-.user-info-bar::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(230, 101, 52, 0.5) 15%,
-    rgba(226, 217, 86, 0.5) 40%,
-    rgba(98, 224, 128, 0.5) 60%,
-    rgba(230, 70, 221, 0.5) 85%,
-    transparent
-  );
-  pointer-events: none;
-}
-
 /* Covers float up a touch as they grow */
 .basic-movie-list__movie__cover:hover,
 .cover-movie-list__movie__cover-link:hover,
