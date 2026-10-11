@@ -4774,6 +4774,128 @@ textarea:hover:not(:focus) {
   transform: none;
 }
 
+/* --- Round 2: calmer forms, clearer buttons, wider layout --- */
+
+/* One control height so form rows line up */
+input:not([type="checkbox"]):not([type="radio"]):not([type="image"]),
+select {
+  height: 32px;
+}
+
+/* Focus: a tight ring instead of a 40px haze */
+input:not([type="checkbox"]):not([type="radio"]):focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  border-color: #4281da;
+  box-shadow: 0 0 0 3px rgba(66, 129, 218, 0.25),
+    0 0 16px rgba(66, 129, 218, 0.18);
+}
+
+/* Primary vs secondary buttons */
+input[type="submit"]:not([value^="Delete"]):not([value="Defriend"]) {
+  background: #3d6cb5;
+}
+
+input[type="reset"],
+input[type="button"],
+button {
+  background: #262c3e;
+  border-color: #3a4056;
+  color: #c9cede;
+}
+
+/* Quick search row: real search fields, not stamps */
+.search-bar {
+  padding: 0.45rem 0.6rem;
+}
+
+.search-bar__list {
+  gap: 0.5rem;
+}
+
+.search-bar__list input.search-bar__search-field__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  margin: 0.2rem 0;
+  padding: 0 0.75rem;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #e4e7ef;
+  background: #10131f;
+  border: 1px solid #343a50;
+  border-radius: 6px;
+}
+
+.search-bar__list input.search-bar__search-field__input:hover {
+  border-color: #4e5674;
+}
+
+/* Table headers: muted, not shouty */
+.table > thead > tr,
+.table--panel-like > thead > tr {
+  background: #161a27;
+}
+
+.table > thead > tr > th,
+.table--panel-like > thead > tr > th {
+  color: #b4bacb;
+  font-weight: 600;
+  border-bottom: 1px solid #3a4056;
+}
+
+/* Pagination: dim the | separators, highlight the current page */
+.pagination {
+  color: #444b62;
+}
+
+.pagination__link {
+  color: #a0a6b7;
+}
+
+.pagination__current-page {
+  opacity: 1;
+  color: #fff;
+  background: rgba(66, 129, 218, 0.22);
+}
+
+/* A little more room on big screens */
+@media (min-width: 1200px) {
+  body,
+  #torrents-movie-view {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body,
+  #torrents-movie-view {
+    max-width: 1360px;
+  }
+}
+
+@media (min-width: 1680px) {
+  body,
+  #torrents-movie-view {
+    max-width: 1560px;
+  }
+}
+
+@media (min-width: 2048px) {
+  body,
+  #torrents-movie-view {
+    max-width: 1720px;
+  }
+}
+
+@media (min-width: 3840px) {
+  body,
+  #torrents-movie-view {
+    max-width: 2000px;
+  }
+}
+
 /****************************************************************************
   9.0 - Accessibility */
 
